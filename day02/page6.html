@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      
+        td{
+            width: 100px;
+            background-color: greenyellow;
+        }
+        #td1{
+            background-color: yellow;
+            text-align: center;
+        }
+        #td2{
+            background-color: pink;
+            text-align: center;
+        }
+        #td3{
+            background-color: green;
+            text-align: center;
+        }
+        /* 아이디선택자 */
+        #td4{
+            background-color: plum;
+            text-align: center;
+        }
+        /* 태그선택자 */
+        hr{
+            background-color: red;
+            width: 500px;
+            height: 10px;
+        }
+        /*
+            마우스를 올렸을 때 가상상황을 선택 
+            가상선택자
+        */
+        td:hover{ 
+            background: red;
+            color: white;
+            font-family: 궁서;
+            font-size: 20px;
+        }
+        a{
+            text-decoration: none;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+ <h2>나의 취미</h2>   
+ <hr>
+ <table border="1">
+     <tr>
+         <td id="td1">취미종류</td>
+         <td id="td2">취미금액</td>
+         <td id="td3">취미장소</td>
+     </tr>
+     <tr>
+        <td>달리기</td>
+        <td>1000</td>
+        <td>여의도 공원</td>
+    </tr>
+    <tr>
+        <td>등산</td>
+        <td>2000</td>
+        <td>관악산</td>
+    </tr>
+    <tr>
+        <td>독서</td>
+        <td>10000</td>
+        <td>강남역</td>
+    </tr>
+    <tr>
+        <td colspan="3" id="td4">
+            <a href="index.html">첫페이지로</a>
+        </td>
+    </tr>
+ </table>
+</body>
+</html>
+
+
+
+
+
+

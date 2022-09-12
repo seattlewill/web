@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>화면 나누기</title>
+    <style>
+        div{
+            color: green;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        #d1{
+            border-top: 5px solid red;
+            border-bottom: 5px solid red;
+        }
+        .d2{
+            width: 250px;
+            background: yellow;
+            margin: 25px; /* 바깥쪽의 여백, 4군데 모두 */
+            padding: 20px; /* 안쪽의 여백, 4군데 모두 */
+            /* 모서리의 번호대로 순서대로 설정 1,2,3,4 */
+            /* 패턴이 동일한 경우 1,2의 패턴을 그대로 3,4번으로 적용 */
+            border-radius: 100px 10px; 
+            border: 20px inset blue;
+            box-shadow: 10px 10px yellow;
+        }
+    </style>
+</head>
+<body>
+   <div id="d1">
+     나는 첫번째 메뉴가 들어갈 부분<br>
+     나는 두번째 줄입니다.
+   </div> 
+   <div class="d2">
+    오늘은 비가 많이 오고<br>
+    황사도 많습니다.
+   </div> 
+   <div class="d2">
+    내일은 비가 그치고 <br>
+    황사도 사라질 것입니다.
+   </div> 
+</body>
+</html>
+
+
+
+
+
+

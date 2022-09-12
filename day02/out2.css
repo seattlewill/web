@@ -1,0 +1,89 @@
+div {
+    font-size: 25px;
+    font-weight: bold;
+    color: blue;
+}
+#td3 {
+    background: white;
+    width: 300px;
+}
+#td2 {
+    background: white;
+    width: 150px;
+}
+#td {
+    background: pink;
+    width: 150px;
+    height: 50px;
+}
+td {
+    text-align: center;
+}
+button:hover {
+    background: yellow;
+    color: black;
+    font: 25px 궁서 bold;
+}
+button {
+    background: lime;
+    color: red;
+    font: 25px 궁서 bold;
+}
+input, textarea {
+    color: red;
+    font: 25px 궁서 bold;
+    width: 200px;
+    background: pink;
+}
+a:hover { 
+    background: gold;
+}
+li:nth-child(2n) { 
+    background: pink;
+}
+li:nth-child(2n+1) { 
+    background: orange;
+}
+li:first-child {
+    border-radius: 20px 0 0 20px;
+}
+li:last-child {
+    border-radius: 0 20px 20px 0;
+}
+a {
+    text-decoration: none;
+    color: red;
+}
+#total {
+    background-image: url(../img/back.png);
+    color: blue; 
+    font: 25px 궁서 bold; 
+    width: 800px;
+    height: 800px;
+}
+
+
+#top {
+    width: 800px;
+    height: 100px;
+    background: lime;
+}
+
+
+#top2 {
+    color: yellow;
+    top: 5px;
+    right: 5px;
+    width: 250px;
+    height: 100px;
+    background: black;
+    position: fixed;
+    border-radius: 100px 10px;
+}
+
+
+li {
+    list-style: none;
+    float: left;
+    padding: 15px; 
+}

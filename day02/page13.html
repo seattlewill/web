@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            #d1 > p { /* id가 d1바로 아래 p태그만 스타일 적용*/
+                background-color: aqua;
+            }
+
+            #d2 p { /* id가 d1 아래 아무 p태그나 스타일 적용*/
+                background-color: lightgreen;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="d1">
+            <p>감자1</p>
+            <div id="d11">
+                <p>감자2</p>
+                <p>고구마</p>
+            </div>
+        </div>
+
+        <div id="d2">
+            <p>감자3</p>
+            <div id="d22">
+                <p>감자4</p>
+                <p>고구마</p>
+            </div>
+        </div>
+    </body>
+</html>
