@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+      function rec() {
+          //가로*세로
+          n1 = document.getElementById('n1').value
+          n2 = document.getElementById('n2').value
+          alert(parseInt(n1) * parseInt(n2))
+      }
+      function tri() {
+          //3.14 * r * r
+          r = document.getElementById('r').value
+          alert(3.14 * parseFloat(r) * parseFloat(r))
+      }
+    </script>
+</head>
+<body>
+    가로값: <input type="text" id="n1"><br>
+    세로값: <input type="text" id="n2"><br>
+    <button onclick="rec()">사각형의 면적구하기</button>
+    <hr>
+    반지름: <input type="text" id="r"><br>
+    <button onclick="tri()">삼각형의 면적구하기</button>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function webtoon() {
+            webtoon = document.getElementById('webtoon').value
+            if (webtoon == '독립일기') {
+                web = '748105'
+            }else if (webtoon == '육아일기') {
+                web = '732955'
+            } else {
+                web = '749456'
+            }
+            location.href = 'https://comic.naver.com/webtoon/list.nhn?titleId='  + web
+        }
+        function naver() {
+            naver = document.getElementById('naver').value
+            location.href = 'https://kin.naver.com/search/list.nhn?query=' + naver
+        }
+        function go() {
+            location.href = 'page02.html'
+        }
+        function user() {
+            alert('ok')
+            user = document.getElementById('user').value
+            if (user == 'root') {
+                result1.innerHTML = '<font color=red>아이디 성공</font>'
+            } else {
+                result1.innerHTML = '<font color=blue>아이디 실패/재로그인해주세요.</font>'
+                setTimeout(go, 2000)
+            }
+        }
+    </script>
+</head>
+<body>
+    아이디 <input type="text" id="user" onblur="user()">
+    <br>
+    <div id='result1'></div>
+    <hr>
+    지식인 검색어 <input type="text" id='naver' onblur="naver()">
+    <hr>
+    보고 싶은 웹툰 입력 <input type="text" id="webtoon" onblur="webtoon()">
+</body>
+</html>
