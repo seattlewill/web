@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+       //함수는 특정한 기능(처리)을 가진 단위
+       //기능, function(펑션)
+       function plus() {
+            //    alert('plus 함수를 사용함.')
+            //    alert('n1, n2를 가지고 와야함.')
+            n1 = document.getElementById('n1').value
+            alert('숫자1의 입력값은 ' + n1)
+            n2 = document.getElementById('n2').value
+            alert('숫자2의 입력값은 ' + n2)
+            //숫자로 바꾸어서, 더한 다음 출력해보세요. 
+            n11 = parseInt(n1)
+            n22 = parseInt(n2)
+            alert(n11 + n22)
+       }
+       function login() {
+           //user, pw에 넣은 것을 가지고 와서
+           user = document.getElementById('user').value
+           pw = document.getElementById('pw').value
+
+           //user가 root, pw가 1234 둘 다(&&) 맞으면
+           //로그인 성공, 아니면 실패라고 프린트
+           if (user == 'root' && pw == '1234') {
+               alert('로그인 성공')
+            } else {
+               alert('로그인 실패')
+           }
+       }
+    </script>
+</head>
+<body>
+    숫자1: <input type="text" id="n1"><br>
+    숫자2: <input type="text" id="n2"><br>
+    <button onclick="plus()">더하기</button>
+    <hr>
+    아이디: <input type="text" id="user"><br>
+    패스워드: <input type="text" id="pw"><br>
+    <button onclick="login()">로그인</button>
+</body>
+</html>

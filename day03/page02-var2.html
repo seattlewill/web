@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script>
+            x = 100 //전역변수
+            y = 100
+            sum = 1000
+            if(x == y){
+                total = 100 //전역변수
+                var sum = 200 
+                //헷갈림, 변수의 재선언을 사용하지 않아야 함.
+                //js낮은 버전에서는 지역 but, 높은 버전에서는 전역
+                let x2 = 999 //지역변수, let권장
+                alert('total1- ' + total) //100
+                alert('sum1- ' + sum) //200
+                alert('x2- ' + x2) //999
+            }
+            alert('total2- ' + total) //100, 전역
+            alert('sum2- ' + sum) //200, 전역
+            alert('x1- ' + x2) //지역, 에러!
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
