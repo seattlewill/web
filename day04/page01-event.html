@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script>
+        //body부분을 만나면, 옆에 있는 함수부분을 실행시켜줌.
+        $(function() { //익명함수
+            //우리가 원하는 제이쿼리 코딩해주면 됨.
+            //b1을 클릭했을 때->태그,id,class
+           $('#b1').click(function() {
+               price = $('#price').val()
+               count = $('#count').val()
+               price2 = parseInt(price)
+               count2 = parseInt(count)
+               alert(price2 * count2)
+           })
+            //price, count값을 가지고 와야함.
+            //숫자로 변환해야함.
+            //가격을 알려줌.
+        })
+    </script>
+</head>
+<body>
+ 커피가격: <input type="text" id="price">   <br>
+ 커피수량: <input type="text" id="count">   <br>
+ <button id="b1">커피 결제금액 확인</button>
+</body>
+</html>
+
+
+

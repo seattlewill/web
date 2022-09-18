@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script>
+        $(function() {
+            $('button').click(function() {
+                $('img').attr("src", "img/giphy.gif")
+               // $(this).css("background", "lime")
+                $('button').attr('style', 'background:lime')
+            })
+        })
+    </script>
+</head>
+<body>
+    <img src="img/baby.png" width="150" height="150">
+    <br>
+    <button>이미지 변신...</button>
+</body>
+</html>

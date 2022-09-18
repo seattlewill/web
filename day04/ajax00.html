@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script>
+        $(function() { //익명함수
+            //b2를 눌렀을 때 tomcat으로 비동기통신
+            $('#b2').click(function() {
+                $.ajax({
+                    url: 'http://127.0.0.1:5500/day04/ok.html',
+                    success: function(data) {
+                        alert('live서버 통신 성공!!! ' + data)
+                    },
+                    error: function(error) {
+                        alert('live서버 통신 실패!!! ' + error )
+                    }
+                })
+            })
+
+            $('#b3').click(function() {
+                $.ajax({
+                    url: 'http://127.0.0.1:5500/day04/weather.html',
+                    success: function(data) {
+                        alert('live서버 통신 성공!!! ' + data)
+                    },
+                    error: function(error) {
+                        alert('live서버 통신 실패!!! ' + error )
+                    }
+                })
+            })
+
+            //b1을 눌렀을 때 msn사이트와 비동기통신 
+            $('#b1').click(function() {
+                //b1을 클릭했을 때 처리 내용씀.
+                //성공했을 때, 연결성공!!
+                //실패했을 때, 연결실패!!
+                $.ajax({
+                    url: 'http://127.0.0.1:5500/day04/tour.html ',
+                    success: function(data) {
+                        alert('live서버 통신 성공!!! ' + data)
+                    },
+                    error: function(error) {
+                        alert('live서버 통신 실패!!! ' + error )
+                    }
+                })
+            })
+        })
+    </script>
+</head>
+<body>
+<button id='b1'>내 서버 공공portal로 통신하기(tour)</button> <br>
+<button id='b2'>내 서버 ok.html로 통신하기</button> <br>
+<button id='b3'>내 서버 weather.html로 통신하기</button> <br>
+</body>
+</html>
+
+
+

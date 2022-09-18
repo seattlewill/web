@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script>
+            $(function() {
+                //제이쿼리 프로그래밍
+                $('button').click(function () {
+                    //입력한 값들을 가지고 온다. 
+                    money = document.getElementById('money').value
+                    count = document.getElementById('count').value
+                    
+                    //정수로 변환
+                    money2 = parseInt(money)
+                    count2 = parseInt(count)
+                    
+                    //총 결제금액을 계산
+                    sum = money2 * count2
+                    
+                    //결제처리해주자. 소액결제 2만원이하만 가능하게 해주자. 네이버쇼핑을 하라고 연결.!!
+                    //            2만원이상이라고 한다면 메세지 출력.
+                    if (sum <= 20000) {
+                        //location: 브라우저의 주소부분을 나타내는 내장된 객체 
+                        location.href = 'https://shopping.naver.com/home/p/index.naver'
+                    } else {
+                        alert('소액결제만 가능합니다. 다시 입력해주세요.!!')
+                    }
+                })
+           
+            })
+		</script>
+	</head>
+	<body>
+		하나당 가격: <input id="money" value="10000"><br>
+		물건의 개수: <input id="count" value="50"><br>
+		<button style='background: lime'>결제하기</button>
+	</body>
+</html>

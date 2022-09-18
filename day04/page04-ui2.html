@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Accordion - Default functionality</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <style>
+      h3{
+          background: lime;
+      }
+  </style>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    //document.getElementById('accordion')
+    $( "#accordion" ).accordion();
+  } );
+  </script>
+</head>
+<body>
+ 
+<div id="accordion">
+  <h3>나에 대한 소개</h3>
+  <div>
+    <p>
+    나에 대한 소개가 들어가요.
+    </p>
+  </div>
+  <h3>내 취미</h3>
+  <div>
+    <p>
+    나의 취미가 들어가요.
+    </p>
+  </div>
+  <h3>내 시간표</h3>
+  <div>
+    <p>
+        시간표가 들어가요.
+    </p>
+   
+  </div>
+  <h3>내가 자주 가는 사이트</h3>
+  <div>
+    <p>
+        네이버, 카카오.
+    </p>
+    
+    
+  </div>
+</div>
+ 
+ 
+</body>
+</html>

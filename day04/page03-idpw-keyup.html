@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script>
+        $(function() {
+            //제이쿼리 프로그래밍
+            
+            //b1을 클릭했을 때
+            $('#b1').click(function () {
+                id = $('#user').val()
+                idLen = id.length
+
+                if(idLen < 5) {
+                    $('#d2').html('<font color=red>5미만! 재입력해주세요.</font>')
+                }else{
+                    $('#d2').html('<font color=blue>제대로 된 id입니다.</font>')
+                }
+            })
+            //user에 있는 값을 가지고와서
+            //아이디가 맞는 확인한 후
+            //d2에 결과를 표시
+
+            //pw2를 치고 키를 올렸을 때
+            $('#pw2').keyup(function() {
+                //pw1의 값과 pw2의 값을 가지고 와서
+                pw1 = $('#pw1').val()
+                pw2 = $('#pw2').val()
+
+                //동일한지 비교한 다음
+                if(pw1 == pw2){
+                    $('#d1').html('<font color=blue>똑같아요.</font>')
+                }else{
+                    $('#d1').html('<font color=red>달라요</font>')
+                }
+                //결과를 div에 표시해보자.
+            })
+           
+        })
+    </script>
+</head>
+<body>
+    패스워드: <input type="text" id="pw1"> <br>
+    패스워드 확인: <input type="text" id="pw2"> <br>
+    <hr>
+    <div id="d1"></div>
+    <hr>
+    사용자 아이디: <input type="text" id="user"><br>
+    <button id="b1">로그인 아이디 확인</button>
+    <div id="d2"></div>
+</body>
+</html>
